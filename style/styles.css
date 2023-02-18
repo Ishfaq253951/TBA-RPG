@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #556;
+}
+
+.container {
+    font-size: 32px;
+    width: 800px;
+    max-width: 80%;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 1px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: hsl(200, 100%, 50%);
+    border: 4px solid hsl(200, 100%, 45%);
+    border-radius: 5px;
+    padding: 10px, 15px;
+    color: azure;
+    outline: none;
+    font-size: 24px;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        font-size: 20px;
+        max-width: 85%;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
